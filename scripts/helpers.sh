@@ -1,5 +1,4 @@
-#!bash
-# shellcheck disable=SC2239
+# shellcheck shell=bash
 
 put_default="C-v"
 put_option="@put_key"
