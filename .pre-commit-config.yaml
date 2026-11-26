@@ -21,3 +21,12 @@ repos:
   rev: v0.11.0.1-1
   hooks:
   - id: shellcheck
+- repo: local
+  hooks:
+  - id: bats-tests
+    name: Helpers BATS Tests
+    entry: tests/helpers.bats
+    language: node
+    additional_dependencies:
+    - bats@1.11.0
+    files: ^(scripts|tests)/helpers\..*
