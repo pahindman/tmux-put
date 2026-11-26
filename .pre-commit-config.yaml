@@ -25,8 +25,9 @@ repos:
   hooks:
   - id: bats-tests
     name: Helpers BATS Tests
-    entry: tests/helpers.bats
+    entry: bats tests
     language: node
     additional_dependencies:
     - bats@1.11.0
     files: ^(scripts|tests)/helpers\..*
+    pass_filenames: false
